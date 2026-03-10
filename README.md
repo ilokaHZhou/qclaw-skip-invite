@@ -23,6 +23,10 @@ APP_ASAR="/Applications/QClaw.app/Contents/Resources/app.asar"
 cp "$APP_ASAR.bak" "$APP_ASAR"
 ```
 
+## 免责声明
+
+本工具仅供学习研究使用，不得用于商业用途。使用本工具所产生的一切后果由使用者自行承担，与作者无关。
+
 ## License
 
 [MIT](./LICENSE)
