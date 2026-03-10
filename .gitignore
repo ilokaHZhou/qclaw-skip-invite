@@ -1,2 +1,6 @@
+node_modules/
 qclaw-app-extracted/
 *.asar
+bun.lock
+claude.md
+.claude/

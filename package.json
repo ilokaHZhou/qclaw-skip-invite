@@ -1,0 +1,19 @@
+{
+  "name": "qclaw-skip-invite",
+  "version": "0.0.0",
+  "description": "Skip QClaw invite code verification",
+  "type": "module",
+  "bin": {
+    "qclaw-skip-invite": "./patch.sh"
+  },
+  "files": [
+    "patch.sh"
+  ],
+  "scripts": {
+    "release": "release-it"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "release-it": "^19.2.4"
+  }
+}
