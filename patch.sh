@@ -4,6 +4,14 @@ set -euo pipefail
 APP_PATH="/Applications/QClaw.app"
 ASAR_PATH="$APP_PATH/Contents/Resources/app.asar"
 WORK_DIR="$(mktemp -d)"
+WAS_RUNNING=false
+
+if pgrep -f "QClaw" > /dev/null 2>&1; then
+  WAS_RUNNING=true
+  echo "==> QClaw is running, stopping..."
+  pkill -f "QClaw" || true
+  sleep 1
+fi
 
 cleanup() { rm -rf "$WORK_DIR"; }
 trap cleanup EXIT
@@ -45,5 +53,9 @@ cp "$ASAR_PATH" "$ASAR_PATH.bak"
 echo "==> Replacing with patched app.asar..."
 cp "$WORK_DIR/app-patched.asar" "$ASAR_PATH"
 
-echo "==> Done! Restart QClaw to take effect."
-echo "    Backup saved at: $ASAR_PATH.bak"
+echo "==> Done! Backup saved at: $ASAR_PATH.bak"
+
+if [ "$WAS_RUNNING" = true ]; then
+  echo "==> Restarting QClaw..."
+  open "$APP_PATH"
+fi
