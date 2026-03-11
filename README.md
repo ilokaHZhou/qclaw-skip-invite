@@ -4,7 +4,7 @@
 
 ## 支持
 
-- QClaw v0.1.1 / v0.1.2（macOS Apple 芯片 / Intel 芯片）
+- QClaw v0.1.1 ~ v0.1.3（macOS Apple 芯片 / Intel 芯片）
 
 ## 使用
 
