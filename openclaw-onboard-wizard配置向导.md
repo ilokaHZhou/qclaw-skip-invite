@@ -1,5 +1,19 @@
 # OpenClaw `onboard --install-daemon` 向导步骤解析
 
+
+## 在这之前的安装步骤
+`curl -fsSL https://openclaw.ai/install.sh | bash`
+// 如果上面的不行就直接安装 npm install -g openclaw@latest
+
+// 进入配置向导
+`openclaw onboard --install-daemon`
+
+// 查看当前状态
+`openclaw gateway status`
+
+// 进入交互页面
+`openclaw dashboard`
+
 > 适用范围：在 macOS、Linux、云主机等环境中运行 `openclaw onboard --install-daemon` 之后，终端里呈现的交互式初始化向导。以下说明逐步拆解每个阶段的目的、背后动作，以及需要注意的安全要点。
 
 ## 一图总览
