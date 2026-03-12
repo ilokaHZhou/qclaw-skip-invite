@@ -10,16 +10,16 @@ https://claw.guanjia.qq.com/
 
 `curl -fsSL https://openclaw.ai/install.sh | bash`
 
-// 如果上面的不行就直接安装 npm install -g openclaw@latest
+// 如果上面的不行就直接安装 `npm install -g openclaw@latest`
 
 // 进入配置向导 
 
-openclaw onboard --install-daemon
+`openclaw onboard --install-daemon`
 
 // 查看当前状态
 
-openclaw gateway status
+`openclaw gateway status`
 
 // 进入交互页面
 
-openclaw dashboard
+`openclaw dashboard`
